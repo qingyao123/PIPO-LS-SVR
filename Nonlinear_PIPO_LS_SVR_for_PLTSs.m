@@ -246,7 +246,7 @@ function pred_y = prediction(alpha,b_k,trainX,testX,m,kernel)
     if m_d1 == m_d2
         d = m_d1 / m;
     else
-        print("输入矩阵的维度不一致！");
+        print("The dimensions of the input matrices are inconsistent！");
     end
     d = m_d1 / m;
     L_mat1 = generate_L_mat(trainX,m);
@@ -393,4 +393,5 @@ function norm_y = get_norm_y(output_y)
         end
         norm_y(i,:) = output_y(i,:) / sum(output_y(i,:));
     end
+
 end
